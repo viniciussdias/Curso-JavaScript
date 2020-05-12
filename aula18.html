@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Cursos - Javascript</title>
+
+    <script>
+        // Comando de loop FOR
+
+        /*
+        for(p1; p2; p3) {
+            comandos;
+        }
+        
+        p1 = inicialização do contador
+        p2 = condição de execução do loop
+        p3 = incremento ou decremento do contador
+        */
+
+        // var num = [];
+
+        var mochila = [
+            ["Corda", 1], 
+            ["Cura", 10], 
+            ["Lanterna", 1], 
+            ["Pilha", 20]
+        ]; // matriz
+        
+        // for(cont=0; cont<mochila.length; cont++) {
+        //     document.write("Item: " + mochila[cont][0] + " - " + "Quantidade: " + mochila[cont][1] + "<br>");
+        // }
+
+        for(l=0; l<mochila.length; l++) { // l - linha
+            for(c=0; c<2; c++) { // c - coluna
+                document.write(mochila[l][c] + " ");
+            }
+            document.write("<br>");
+        }
+
+        // for(cont=0; cont<num.length; cont++) {
+        //     document.write(num[cont] + "<br>");
+        // }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

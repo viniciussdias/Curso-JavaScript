@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Cursos - Javascript</title>
+
+    <script>
+        // Comando de loop WHILE
+
+        /*
+        p1;
+        while(p2) {
+            comandos;
+            p3;
+        }
+
+        p1 = inicialização do contador
+        p2 = condição de execução do loop
+        p3 = incremento ou decremento do contador
+        */
+
+        var num, cont;
+        
+        // maneira tradicional
+        num = 0;
+        while(num < 10) {
+            document.write("CFB Cursos<br>");
+            num++;
+        }
+
+        document.write("<hr>")
+
+        // maneira resumida
+        num = 10;
+        while(num--) {
+            document.write("CFB Cursos<br>");
+        }
+
+        document.write("<hr>")
+
+        // maneira mais complexa, menos usual
+        num = true;
+        cont = 0;
+        while(num) {
+            document.write("CFB Cursos<br>");
+            cont++;
+            if(cont > 9) {
+                num = false;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

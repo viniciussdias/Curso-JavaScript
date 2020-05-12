@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Cursos - Javascript</title>
+
+    <script>
+        // Mais métodos da classe array
+
+        /*
+        indexOf - pesquisar elemento dentro de um array
+        sort - ordenar array
+        reverse - inverter a ordem dos elementos no array
+        concat - une arrays
+        join - une todos os elementos de um array em uma variável só, em forma de string separadas por vírgula
+        length - quantidade de elementos em um array
+
+        */
+
+        var mochila = [], mochila1 = [], mochila2 = [], pos;
+
+        /*
+        var num = [9, 6, 5, 3, 7, 2, 1, 4, 8, 0];
+        var numeros;
+
+        num.sort();
+        num.reverse();
+
+        numeros=num.join()
+        document.write(numeros + "<br>")
+
+        document.write(num[0] + "<br>");
+        document.write(num[1] + "<br>");
+        document.write(num[2] + "<br>");
+        document.write(num[3] + "<br>");
+        document.write(num[4] + "<br>");
+        document.write(num[5] + "<br>");
+        document.write(num[6] + "<br>");
+        document.write(num[7] + "<br>");
+        document.write(num[8] + "<br>");
+        document.write(num[9] + "<br>");
+        */
+        
+        mochila1.push("Faca");
+        mochila1.push("Corda");
+        mochila1.push("Pederneira");
+        mochila1.push("Chave");
+        mochila1.push("Lanterna");
+        mochila1.push("Pedra");
+        mochila1.push("Isqueiro");
+
+        mochila2.push("Arco e Flecha");
+        mochila2.push("Canivete");
+        mochila2.push("Pistola");
+        mochila2.push("Bússula");
+        mochila2.push("Luva");
+        mochila2.push("Arame");
+
+        mochila1.pop();
+
+        mochila = mochila1.concat(mochila2);
+    
+        /*
+        pos=mochila.indexOf(prompt("Qual item deseja verificar na mochila?"));
+
+        if(pos < 0) {
+            document.write("Item não está na mochila!");
+        }else {
+            document.write("Item está na mochila! " + "<br>" + "Posição: " + pos);
+        }
+        */
+
+        document.write(mochila[0] + "<br>");
+        document.write(mochila[1] + "<br>");
+        document.write(mochila[2] + "<br>");
+        document.write(mochila[3] + "<br>");
+        document.write(mochila[4] + "<br>");
+        document.write(mochila[5] + "<br>");
+        document.write(mochila[6] + "<br>");
+        document.write(mochila[7] + "<br>");
+        document.write(mochila[8] + "<br>");
+        document.write(mochila[9] + "<br>");
+        document.write(mochila[10] + "<br>");
+        document.write(mochila[11] + "<br>");
+
+        document.write("Quantidade de itens na mochila 1: " + mochila1.length + "<br>");
+        document.write("Quantidade de itens na mochila 2: " + mochila2.length + "<br>");
+        document.write("Quantidade de itens na mochila: " + mochila.length + "<br>");
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Cursos - Javascript</title>
+
+    <script>
+
+        var pos, msg, pontos = prompt("Digite sua pontuação:");
+
+        if(pontos >= 1000) {
+            pos = 1;
+        }else if(pontos >= 800) {
+            pos = 2;
+        }else if(pontos >= 600) {
+            pos = 3;
+        }else {
+            pos = 0;
+        }
+
+        // switch - case
+        switch(pos) {
+            case 1:
+                msg = "1º Lugar\nMedalha de Ouro";
+                break;
+            case 2:
+                msg = "2º Lugar\nMedalha de Prata";
+                break;
+            case 3:
+                msg = "3º Lugar\nMedalha de Bronze";
+                break;
+            default:
+                msg = "Não foi ao pódio\nNão obteve medalha";
+        }
+
+        switch(pos) {
+            case 1:
+            case 2:
+            case 3:
+                msg += "\nSubiu ao pódio!";
+                break;
+            default:    
+                msg += "\nNão teve colocação";
+        }
+        alert(msg);
+
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
